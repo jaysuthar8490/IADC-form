@@ -1,0 +1,309 @@
+/* =========================
+   RESULT PAGE
+========================= */
+
+.result-page {
+  min-height: 100vh;
+  width: 100%;
+
+  background: #f2f2f2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   RESULT CARD
+========================= */
+
+.result-card {
+  width: 100%;
+  max-width: 700px;
+
+  background: #ffffff;
+
+  padding: 55px 70px;
+
+  box-sizing: border-box;
+
+  border-radius: 5px;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.result-logo {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 45px;
+}
+
+.result-logo img {
+  width: 160px;
+  max-width: 100%;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================
+   INFORMATION ROW
+========================= */
+
+.info-row {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 155px 1fr;
+
+  gap: 20px;
+
+  align-items: center;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.info-label {
+  color: #7a1720;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+/* =========================
+   VALUE
+========================= */
+
+.info-value {
+  color: #333333;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  word-break: break-word;
+}
+
+
+/* =========================
+   ACTIVE STATUS
+========================= */
+
+.status-active {
+  color: #198754;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   GO BACK BUTTON
+========================= */
+
+.go-back-button {
+  display: block;
+
+  margin: 40px auto 0;
+
+  padding: 13px 38px;
+
+  background: #7a1720;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 4px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.go-back-button:hover {
+  background: #5c1018;
+
+  transform: translateY(-1px);
+}
+
+.go-back-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .result-page {
+    padding: 30px 15px;
+
+    align-items: flex-start;
+  }
+
+  .result-card {
+    max-width: 600px;
+
+    padding: 45px 40px;
+  }
+
+  .result-logo {
+    margin-bottom: 35px;
+  }
+
+  .result-logo img {
+    width: 140px;
+  }
+
+  .info-row {
+    grid-template-columns: 130px 1fr;
+
+    gap: 15px;
+
+    padding: 14px 0;
+  }
+
+  .info-label {
+    font-size: 16px;
+  }
+
+  .info-value {
+    font-size: 16px;
+  }
+
+  .go-back-button {
+    font-size: 16px;
+
+    padding: 12px 32px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .result-page {
+    padding: 15px 10px;
+
+    align-items: flex-start;
+  }
+
+  .result-card {
+    width: 100%;
+
+    padding: 30px 18px;
+
+    border-radius: 5px;
+  }
+
+  .result-logo {
+    margin-bottom: 30px;
+  }
+
+  .result-logo img {
+    width: 115px;
+  }
+
+  .info-row {
+    grid-template-columns: 100px 1fr;
+
+    gap: 10px;
+
+    padding: 13px 0;
+  }
+
+  .info-label {
+    font-size: 14px;
+
+    line-height: 1.35;
+  }
+
+  .info-value {
+    font-size: 14px;
+
+    line-height: 1.45;
+  }
+
+  .go-back-button {
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 13px 20px;
+
+    font-size: 15px;
+  }
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 350px) {
+
+  .result-card {
+    padding: 25px 14px;
+  }
+
+  .result-logo img {
+    width: 100px;
+  }
+
+  .info-row {
+    grid-template-columns: 85px 1fr;
+
+    gap: 8px;
+  }
+
+  .info-label {
+    font-size: 13px;
+  }
+
+  .info-value {
+    font-size: 13px;
+  }
+}
