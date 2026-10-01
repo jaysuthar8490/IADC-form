@@ -2,36 +2,16 @@ import React, { useState } from "react";
 import "./form.css";
 
 function Form({ onSearch }) {
-  const [studentId, setStudentId] = useState("");
-  const [instructor, setInstructor] = useState(false);
-  const [error, setError] = useState("");
-
+  // Aapki fixed ID
   const MY_ID = "1JAY2-3JAY4";
 
+  // ID already input me show hogi
+  const [studentId, setStudentId] = useState(MY_ID);
+
   const handleSearch = () => {
-    const enteredId = studentId.trim().toUpperCase();
-
-    if (!enteredId) {
-      setError("Please enter Student Certificate ID.");
-      return;
-    }
-
-    if (enteredId !== MY_ID) {
-      setError("Invalid Student Certificate ID.");
-      return;
-    }
-
-    setError("");
-
-    if (typeof onSearch === "function") {
+    // Direct aapki ID ke saath Result page open
+    if (onSearch) {
       onSearch(MY_ID);
-    }
-  };
-
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      handleSearch();
     }
   };
 
@@ -57,30 +37,20 @@ function Form({ onSearch }) {
             Enter Student Certificate ID or Instructor Number
           </label>
 
+          {/* Your ID automatically visible */}
           <input
             id="studentId"
             type="text"
             className="student-input"
-            placeholder="Enter Student Certificate ID"
             value={studentId}
-            onChange={(e) => {
-              setStudentId(e.target.value);
-              setError("");
-            }}
-            onKeyDown={handleKeyDown}
-            autoComplete="off"
+            readOnly
           />
 
           {/* Instructor */}
           <div className="instructor">
             <input
-              id="instructor"
               type="checkbox"
-              checked={instructor}
-              onChange={(e) => {
-                setInstructor(e.target.checked);
-                setError("");
-              }}
+              id="instructor"
             />
 
             <label htmlFor="instructor">
@@ -97,13 +67,6 @@ function Form({ onSearch }) {
             <span className="search-arrow">›</span>
             <span>Search</span>
           </button>
-
-          {/* Error */}
-          {error && (
-            <p className="error-message">
-              {error}
-            </p>
-          )}
 
         </div>
       </section>
