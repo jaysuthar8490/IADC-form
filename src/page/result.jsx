@@ -24,7 +24,7 @@ function Result({ studentId, onBack }) {
           </div>
 
           <div className="info-value">
-            {studentId || "1JAY2-3JAY4"}
+            {studentId || "CC326493-05C784"}
           </div>
         </div>
 
