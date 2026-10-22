@@ -35,7 +35,7 @@ function Result({ studentId, onBack }) {
           </div>
 
           <div className="info-value">
-            Suthar Jaykumar Chandubhai
+            Purshottam Bharmbhatt
           </div>
         </div>
 
@@ -48,7 +48,7 @@ function Result({ studentId, onBack }) {
           </div>
 
           <div className="info-value">
-            18 July 2026
+          13 Octomber 2026
           </div>
         </div>
 
@@ -59,7 +59,7 @@ function Result({ studentId, onBack }) {
           </div>
 
           <div className="info-value">
-            18 July 2028
+           13 Octomber 2028
           </div>
         </div>
 
@@ -83,7 +83,7 @@ function Result({ studentId, onBack }) {
           </div>
 
           <div className="info-value">
-            Asiatic Energy
+           Eagel Well Control
           </div>
         </div>
 
